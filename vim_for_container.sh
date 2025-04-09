@@ -2,7 +2,7 @@
 
 apt update
 
-apt install -y vim-gtk vifm git ripgrep
+apt install -y vim-gtk3 vifm git ripgrep
 
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime && sh ~/.vim_runtime/install_awesome_vimrc.sh
 
@@ -24,8 +24,6 @@ nnoremap <esc>^[ <esc>^[]  ]
 let g:snipMate = { 'snippet_version' : 1 }
 
 :au BufWinEnter * let w:m1=matchadd('Search', '\%<122v.\%>121v', -1)
-
-set clipboard=unnamed
 
 set t_Co=256
 
